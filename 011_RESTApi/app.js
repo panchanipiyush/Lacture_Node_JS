@@ -4,7 +4,7 @@ const PORT = 9000;
 const mongoose = require("mongoose")
 mongoose.set('strictQuery', true)
 app.use(express.json())
-const dburl = "mongodb+srv://panchanipiyush:<password>@cluster0.unnuimw.mongodb.net/24jan?retryWrites=true&w=majority"
+const dburl = "mongodb+srv://panchanipiyush:piyu@2678@cluster0.unnuimw.mongodb.net/24jan?retryWrites=true&w=majority"
 mongoose.connect(dburl).then(() => {
     console.log("db connected");
 }).catch(err => {
